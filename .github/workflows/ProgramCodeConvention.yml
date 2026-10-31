@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check ProgramCode.js
-        run: npx --yes @biomejs/biome check ProgramCode.js
+        run: npx --yes @biomejs/biome check ProgramCodeModified.js
