@@ -1,0 +1,17 @@
+name: Program Code Convention
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  JavaScriptLinter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check ProgramCode.js
+        run: npx --yes @biomejs/biome check ProgramCode.js
